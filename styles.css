@@ -1,0 +1,147 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    Font-size: 15px
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 1400px;
+}
+
+.main-heading {
+    padding: 80px 100px 80px 80px;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px 0 0 10px;
+}
+
+.header {
+    width: 520px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    line-height: 2rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 35px 0 0 0;
+    font-size: 1.2rem;
+    font-family: Inter;
+}
+
+.stat-heading {
+    display: flex;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    margin: 70px 0 0 0;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+    letter-spacing: .1rem;
+    font-weight: lighter;
+}
+
+.stat-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2.5rem;
+}
+
+.img-header {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, hsla(277, 64%, 61%, .5), hsla(277, 64%, 61%, .5)), url("images/image-header-desktop.jpg");
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+  }
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 430px;
+    }
+
+    .main-heading {
+        padding: 50px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .stat-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header {
+        text-align: center;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    p {
+        line-height: 2rem;
+    }
+
+    .companies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .templates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .queries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-header {
+        width: 430px;
+        height: 325px;
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+}
